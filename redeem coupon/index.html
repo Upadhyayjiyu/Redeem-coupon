@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redeem Coupon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="https://cdn.pixabay.com/photo/2017/01/31/20/24/discount-2028048_960_720.png" alt="Coupon Banner">
+    </div>
+    <div class="coupon-box">
+      <h2>Apply Your Coupon</h2>
+      <input type="text" id="couponCode" placeholder="Enter coupon code">
+      <button onclick="applyCoupon()">Apply</button>
+
+      <div class="summary">
+        <p>Subtotal: $<span id="subtotal">100.00</span></p>
+        <p>Discount: -$<span id="discount">0.00</span></p>
+        <hr>
+        <p><strong>Total: $<span id="total">100.00</span></strong></p>
+      </div>
+
+      <p class="note">Valid coupons: <code>SALE20</code> (20%), <code>FLAT10</code> ($10 off)</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
